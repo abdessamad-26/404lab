@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cours de HTML</title>
+    <link rel="stylesheet" href="/css/html-cours.css">
+    <link rel="icon" type="image/png" href="/img/logo-site.png">
+
+</head>
+<body>
+ <header>
+    <a href="index.html                 ">
+        <img src="img/logo-site.png" alt="404Lab Logo">
+    </a>
+        <nav>
+            <ul>
+                <li><a href="log-in.html">log in</a></li>
+               <li><a href="sign-up.html">sign up</a></li>
+
+            </ul>
+        </nav>
+</header>
+    <main>
+        <section >
+            <h2>Introduction à HTML </h2>
+          <ul>
+                <li>
+                    <p>HTML signifie Hyper Text Markup Language.</p>
+                </li>
+                <li><p>HTML est le langage de balisage standard pour la création de pages Web.</p>        
+                </li>
+                <li>
+                    <p>HTML décrit la structure d'une page Web. </p>
+                
+                </li>
+                <li>
+                    <p>HTML est composé d'une série d'éléments.</p>
+                </li>
+                <li>
+                    <p>Les éléments HTML indiquent au navigateur comment afficher le contenu.</p>
+                </li>   
+          </ul>
+        </section>
+            
+        <section class="structure">
+            <h2>Structure de Base</h2>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="fr"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Titre de la Page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;En-tête Principal&lt;/h1&gt;
+    &lt;p&gt;Paragraphe de texte.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+            </pre>
+        </section>
+        <section class="histoire">
+            <h1>Histoire du HTML</h1>
+            <div>
+                <p><strong>1989-1991 :</strong> Naissance du web par Tim Berners-Lee</p>
+                <p><strong>1995 :</strong> HTML 2.0 (premier standard officiel)</p>
+                <p><strong>1997 :</strong> HTML 3.2 et 4.0 (nouvelles balises)</p>
+                <p><strong>1999 :</strong> HTML 4.01 (corrections)</p>
+                <p><strong>2000s :</strong> Tentative de XHTML (peu populaire)</p>
+                <p><strong>2008-2014 :</strong> HTML5 (révolution du web moderne)</p>
+                <p><strong>Depuis 2014 :</strong> HTML en développement continu (living standard)</p>
+
+            </div>
+
+            </section>
+
+        <section class="elements">
+            <h2>Éléments HTML</h2>
+            <ul>
+  <li>
+    <p><strong>&lt;ul&gt; :</strong> Liste non ordonnée</p>
+    <p>Utilisée pour créer des listes avec des puces.</p>
+    <p><strong>Exemple :</strong></p>
+    <p><code>&lt;ul&gt;&lt;li&gt;Item 1&lt;/li&gt;&lt;/ul&gt;</code></p>
+  </li>
+
+  <li>
+    <p><strong>&lt;ol&gt; :</strong> Liste ordonnée</p>
+    <p>Utilisée pour créer des listes numérotées.</p>
+    <p><strong>Exemple :</strong></p>
+    <p><code>&lt;ol&gt;&lt;li&gt;Étape 1&lt;/li&gt;&lt;/ol&gt;</code></p>
+  </li>
+
+  <li>
+    <p><strong>&lt;li&gt; :</strong> Élément de liste</p>
+    <p>Utilisé à l’intérieur de &lt;ul&gt; ou &lt;ol&gt; pour représenter un item.</p>
+    <p><strong>Exemple :</strong></p>
+    <p><code>&lt;li&gt;Élément&lt;/li&gt;</code></p>
+  </li>
+
+  <li>
+    <p><strong>&lt;a&gt; :</strong> Lien hypertexte</p>
+    <p>Permet de créer un lien vers une autre page ou un site externe.</p>
+    <p><strong>Exemple :</strong></p>
+    <p><code>&lt;a href="https://exemple.com"&gt;Clique ici&lt;/a&gt;</code></p>
+  </li>
+
+  <li>
+    <p><strong>&lt;img&gt; :</strong> Image</p>
+    <p>Affiche une image sur la page. C’est un élément <em>vide</em> (pas de contenu).</p>
+    <p><strong>Exemple :</strong></p>
+    <p><code>&lt;img src="image.jpg" alt="Description"&gt;</code></p>
+  </li>
+
+  <li>
+    <p><strong>&lt;iframe&gt; :</strong> Cadre intégré</p>
+    <p>Permet d’intégrer une autre page web ou une vidéo YouTube dans la page.</p>
+    <p><strong>Exemple :</strong></p>
+    <p><code>&lt;iframe src="https://www.youtube.com/embed/ID"&gt;&lt;/iframe&gt;</code></p>
+  </li>
+
+  <li>
+    <p><strong>&lt;div&gt; :</strong> Conteneur générique</p>
+    <p>Utilisé pour grouper des éléments, souvent avec du CSS.</p>
+    <p><strong>Exemple :</strong></p>
+    <p><code>&lt;div&gt;Contenu ici&lt;/div&gt;</code></p>
+  </li>
+
+  <li>
+    <p><strong>&lt;section&gt; :</strong> Section thématique</p>
+    <p>Utilisée pour regrouper des contenus liés (ex: une partie d'article ou un chapitre).</p>
+    <p><strong>Exemple :</strong></p>
+    <p><code>&lt;section&gt;&lt;h2&gt;Partie 1&lt;/h2&gt;&lt;/section&gt;</code></p>
+  </li>
+
+  <li>
+    <p><strong>&lt;nav&gt; :</strong> Zone de navigation</p>
+    <p>Contient des liens vers d'autres parties du site (menu, barre de navigation).</p>
+    <p><strong>Exemple :</strong></p>
+    <p><code>&lt;nav&gt;&lt;a href="#home"&gt;Accueil&lt;/a&gt;&lt;/nav&gt;</code></p>
+  </li>
+
+  <li>
+    <p><strong>&lt;button&gt; :</strong> Bouton</p>
+    <p>Crée un bouton cliquable, souvent utilisé avec JavaScript ou pour les formulaires.</p>
+    <p><strong>Exemple :</strong></p>
+    <p><code>&lt;button&gt;Clique moi&lt;/button&gt;</code></p>
+  </li>
+</ul>
+
+        </section>  
+        <section class="video-html">
+          <h2>Vidéo explicative sur le HTML</h2>
+          <iframe  
+              src="https://www.youtube.com/embed/kUMe1FH4CHE" 
+              title="YouTube video player"  >
+          </iframe>
+          </section>
+
+    </main>
+  <footer>
+        <h3>404Lab</h3>
+       <ul>
+            <li><p>À propos</p></li>
+            <li><p>Carrières</p></li>
+            <li><p>Blog</p></li>
+            <li><p>Partenaires</p></li>
+       </ul>
+
+        <p>&copy; 2023 404Lab. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

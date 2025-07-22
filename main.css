@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ body {
+    font-family: sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #222222;
+    color: white;
+    flex-wrap: wrap;
+}
+
+header img {
+    width: 12%;
+}
+
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #ff5722;
+    text-decoration: none;
+    font-size: 1.3em;
+    padding: 10px 15px;
+    transition: background-color 0.3s ;
+}
+
+nav ul li a:hover {
+    background-color: black;
+    border-radius: 5px;
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.texte h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.texte p {
+    font-size: 1.1em;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    color: #cfcfcf;
+    line-height: 1.6;
+}
+
+.les-bouttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.les-bouttons a {
+    padding: 1em 2em;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s ;
+    text-align: center;
+    font-size: 1em;
+}
+
+.les-bouttons a:first-child {
+    background-color: #ff5722;
+    color: white;
+}
+
+.les-bouttons a:first-child:hover {
+    background-color: black;
+    transform: translateY(-2px);
+}
+
+.les-bouttons a:last-child {
+    background: transparent;
+    border: 2px solid #ff5722;
+    color: #ff5722;
+}
+
+.les-bouttons a:last-child:hover {
+    background-color: #ff5722;
+    color: white;
+    transform: translateY(-2px);
+}
+
+section h2 {
+    font-size: 2.2em;
+    margin-bottom: 40px;
+}
+
+.les-cours {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 20px;
+    text-decoration: none;
+}
+.les-cours a{
+    text-decoration: none;
+}
+.les-cours article {
+    background: #1e1e1e;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: 0.3s ;
+    max-width: 300px;
+    margin: 10px;
+}
+
+.les-cours article:hover {
+    transform: translateY(-5px);
+}
+
+.les-cours img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.les-cours h3 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.4em;
+    color: #ff5722;
+}
+
+.les-cours p {
+    text-align: center;
+    font-size: 0.95em;
+    line-height: 1.5;
+    color: #ccc;
+}
+.formateurs {
+    padding: 60px 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.liste-formateurs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.liste-formateurs article {
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 250px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+.liste-formateurs img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.liste-formateurs h3 {
+    color: #ff5722;
+    margin-bottom: 5px;
+}
+.comment {
+    background-color: #1e1e1e; 
+    padding: 60px 20px;
+    color: #f1f1f1;
+    text-align: center;
+    max-width: 900px;
+    margin: 60px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.comment h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #ff5722;
+    text-shadow: 1px 1px 2px #000;
+}
+
+.comment p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    background-color: #2a2a2a;
+    padding: 15px 20px;
+    border-left: 5px solid #ff5722 ;
+    border-radius: 8px;
+    text-align: left;
+    line-height: 1.6;
+    transition: transform 0.3s ease;
+}
+
+.comment p:hover {
+    transform: translateX(5px);
+}  
+
+footer {
+    background-color: #1e1e1e;
+    color: #f1f1f1;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+footer h3 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #ff5722;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+footer ul li p {
+    color: #aaa;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+footer ul li p:hover {
+    color: #ff5722;
+}
+
+footer p {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #ccc;
+}
+

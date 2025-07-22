@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cours de     CSS</title>
+    <link rel="stylesheet" href="/css/css-cours.css">
+    <link rel="icon" type="image/png" href="/img/logo-site.png">
+
+</head>
+<body>
+    <header>
+        
+        <a href="index.html ">
+            <img src="img/logo-site.png" alt="404Lab Logo">
+        </a>
+            <nav>
+                <ul>
+                    <li><a href="log-in.html">log in</a></li>
+                    <li><a href="sign-up.html">sign up</a></li>
+
+                </ul>
+            </nav>
+       
+    </header>
+    <main>
+        <section class="introduction">
+            <h2>Introduction à CSS</h2>
+            <p>CSS, ou Cascading Style Sheets (en français : feuilles de style en cascade), est un langage de mise en forme utilisé pour définir l'apparence d'une page web.</p>
+            
+            
+        </section>
+        <section class="Histoire">
+            <h2>📜 Origines (1994-1996)</h2>
+                <p>Avant CSS : Les premiers sites Web utilisaient uniquement HTML pour structurer les pages. Il n'y avait pas de véritable moyen de contrôler l'apparence (couleurs, polices, mise en page).</p>
+                <p>1994 : Le développeur Håkon Wium Lie propose pour la première fois un système de feuilles de style pour le Web.</p>
+                <p>1996 : Le W3C (World Wide Web Consortium) adopte officiellement CSS1, la première version de CSS. Elle permettait de :</p>
+                    <ul>
+                        <li>Changer les polices, couleurs et tailles de texte,</li>
+                        <li>Ajouter des marges et des espacements,</li>
+                        <li>Styliser les liens et les paragraphes.</li>
+                    </ul>
+
+                <h2>🚀 CSS2 (1998)</h2>
+                <p>CSS2 ajoute de nombreuses fonctionnalités :</p>
+                    <ul>
+                        <li>Mise en page avec le positionnement (absolute, relative, fixed),</li>
+                        <li>Support des médias (media types),</li>
+                        <li>Introduction du z-index,</li>
+                        <li>Apparition des pseudo-classes comme <code>:hover</code>.</li>
+                    </ul>
+                <p>Mais à cette époque, les navigateurs Web (Internet Explorer, Netscape...) n'interprètent pas toujours CSS de la même manière, ce qui complique le travail des développeurs.</p>
+
+                <h2>🧱 CSS2.1 (2004-2011)</h2>
+                <p>CSS2.1 est une version révisée et corrigée de CSS2, qui stabilise les fonctionnalités les plus utilisées.</p>
+                <p>Elle sert de base solide pour les navigateurs modernes.</p>
+
+                <h2>✨ CSS3 (à partir de 2011)</h2>
+                <p>CSS3 est une révolution : le langage est découpé en modules, chacun étant développé séparément.</p>
+                <p>Exemples de modules CSS3 :</p>
+                    <ul>
+                        <li>Sélecteurs CSS avancés (<code>nth-child</code>, <code>not</code>, etc.),</li>
+                        <li>Transitions et animations,</li>
+                        <li>Flexbox et Grid Layout pour la mise en page,</li>
+                        <li>Media queries pour le responsive design,</li>
+                        <li>Effets visuels : ombres, dégradés, transformations 2D/3D, etc.</li>
+                    </ul>
+
+                <h2>🔄 CSS aujourd’hui</h2>
+                <p>CSS continue d’évoluer : de nouvelles fonctionnalités comme <code>CSS Variables</code>, <code>container queries</code>, <code>subgrid</code>, etc., sont en cours d’adoption.</p>
+                <p>Il est désormais indispensable pour créer des sites Web modernes, responsives, accessibles et interactifs.</p>
+
+        </section>
+
+        <section class="syntax">
+            <h1>🧩 Syntaxe de CSS</h1>
+
+            <h2>1. Structure d'une règle CSS</h2>
+            <p>Une règle CSS est composée de trois parties :</p>
+            <ul>
+                <li><strong>Sélecteur</strong> : pour cibler l'élément HTML</li>
+                <li><strong>Propriété</strong> : ce que l'on veut modifier (ex : couleur, taille...)</li>
+                <li><strong>Valeur</strong> : la valeur que l'on applique à la propriété</li>
+            </ul>
+
+            <p>Exemple :</p>
+            <pre><code>p {
+            color: red;
+            font-size: 16px;
+            }</code></pre>
+
+            <h2>2. Exemple de sélecteurs</h2>
+            <p>Voici différents types de sélecteurs CSS :</p>
+            <pre><code>/* Sélecteur par balise */
+            h1 {
+            color: blue;
+            }
+
+            /* Sélecteur par classe */
+            .titre {
+            font-weight: bold;
+            }
+
+            /* Sélecteur par identifiant */
+            #menu {
+            background-color: #eee;
+            }
+
+            /* Sélecteur combiné */
+            div p {
+            margin: 10px;
+            }</code></pre>
+
+            <h2>3. Syntaxe générale</h2>
+            <pre><code>sélecteur {
+            propriété1: valeur1;
+            propriété2: valeur2;
+            /* etc. */
+            }</code></pre>
+
+            <h2>4. Exemple complet</h2>
+            <pre><code>body {
+            background-color: #ffffff;
+            font-family: Arial, sans-serif;
+            }
+
+            h1 {
+            color: #3498db;
+            text-align: center;
+            }
+
+            p {
+            line-height: 1.6;
+            color: #333333;
+            }</code></pre>
+        </section>
+
+        <section class="Exemple">
+            <h1>💡 Mon site : Avant et après l'ajout de CSS</h1>
+
+            <div class="section">
+                <div class="title">🔲 Version sans CSS</div>
+                <img src="./img/sans-css.png" alt="Capture du site sans CSS">
+                <p>Sans CSS, le site est brut, sans couleurs ni mise en page.</p>
+            </div>
+
+            <div class="section">
+                <div class="title">🎨 Version avec CSS</div>
+                <img src="./img/avec-css.png" alt="Capture du site avec CSS">
+                <p>Avec CSS, le site devient plus esthétique, structuré et agréable à utiliser.</p>
+            </div>
+
+       <section class="video">
+  <h2>Vidéo explicative sur le CSS</h2>
+  <iframe width="560" height="315" 
+          src="https://www.youtube.com/embed/wRNinF7YQqQ" 
+          title="YouTube video player" frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          allowfullscreen>
+  </iframe>
+</section>
+
+</section>
+
+
+    </main>
+  <footer>
+        <h3>404Lab</h3>
+       <ul>
+            <li><p>À propos</p></li>
+            <li><p>Carrières</p></li>
+            <li><p>Blog</p></li>
+            <li><p>Partenaires</p></li>
+       </ul>
+
+        <p>&copy; 2023 404Lab. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

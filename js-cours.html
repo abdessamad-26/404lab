@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cours de JavaScript</title>
+    <link rel="stylesheet" href="/css/js-cours.css">
+     <link rel="icon" type="image/png" href="/img/logo-site.png">
+
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="img/logo-site.png" alt="404Lab Logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="log-in.html">Log In</a></li>
+                <li><a href="sign-up.html">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="introduction">
+            <h2>Introduction à JavaScript</h2>
+            <p>JavaScript est un langage de programmation utilisé pour rendre les pages web interactives.</p>
+        </section>
+        <section class="Histoire">
+            <h2>Histoire de JavaScript</h2>
+            <p>JavaScript a été créé en 1995 par Brendan Eich.</p>
+            <button onclick="alert('JavaScript a été créé en 1995 par Brendan Eich.')">En savoir plus</button>
+            <h3>Évolution de JavaScript</h3>
+            <ul>
+                <li><p>1995 : Création de JavaScript par Brendan Eich chez Netscape.</p></li>
+                <li><p>1997 : Standardisation sous le nom ECMAScript.</p></li>
+                <li><p>2009 : Introduction d'ECMAScript 5 (ES5), ajoutant de nombreuses fonctionnalités.</p></li>
+                <li><p>2015 : Introduction d'ECMAScript 6 (ES6), une mise à jour majeure avec des classes, des modules, et plus.</p></li>
+                <li><p>2020 : ECMAScript 2020, avec des fonctionnalités comme l'opérateur de coalescence nulle et l'opérateur optionnel de chaînage.</p></li>
+            </ul>
+        </section>
+        <section class="syntax">
+            <h2>Syntaxe de JavaScript</h2>
+            <p>Voici un exemple de code JavaScript :</p>
+            <pre><code>function greet() {
+    alert('Bonjour, le monde !');
+}</code></pre>
+            <button onclick="greet()">Cliquez ici</button>
+        </section>
+        <section class="Exemple">
+            <h2>Exemple d'interaction</h2>
+            <p>Entrez votre nom : <input type="text" id="nameInput"></p>
+            <button onclick="greetUser()">Saluer</button>
+            <p id="greeting"></p>
+        </section>
+        <section class="video-js">
+            <h2>Vidéo explicative sur JavaScript</h2>
+            <div class="video">
+                <iframe 
+                    src="https://www.youtube.com/embed/ER9SspLe4Hg" 
+                    title="Vidéo JavaScript"    
+                    frameborder="0" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h3>404Lab</h3>
+       <ul>
+            <li><p>À propos</p></li>
+            <li><p>Carrières</p></li>
+            <li><p>Blog</p></li>
+            <li><p>Partenaires</p></li>
+       </ul>
+
+        <p>&copy; 2023 404Lab. Tous droits réservés.</p>
+    </footer>
+    <script>
+        function greet() {
+            alert('Bonjour, le monde !');
+        }
+
+        function greetUser() {
+            var name = document.getElementById('nameInput').value;
+            if (name) {
+                document.getElementById('greeting').textContent = 'Bonjour, ' + name + ' !';
+            } else {
+                document.getElementById('greeting').textContent = 'Veuillez entrer votre nom.';
+            }
+        }
+    </script>
+</body>
+</html>
